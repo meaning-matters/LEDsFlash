@@ -1,0 +1,15 @@
+LEDsFlash, unique dynamic iPhone 4 flashlight app.  Flash the LED of your iPhone 4 in four amazing ways: beat, shake, tap, and move!
+
+1. 'Beat It' - Turns your iPhone 4 in a real disco light that flashes as it picks up music from the microphone (built-in, or headset).  Of course LEDsFlash allows iPod (and other audio apps) play in the background on the speaker; to turn it into light instantly.  Because LEDsFlash quickly adjusts to changing sound levels automatically, it works well for all volumes.  You can set sensitivity, to match the type of music/sound; but the highest value is already perfect for about everything.
+
+2. 'Shake It' - Hold firmly in your hand and see the rhythm!  Specific filtering inside LEDsFlash, gives you solid flashes.  You can set the sensitivity.
+
+3. 'Tap It' - Use your iPhone 4 as signal light at parties or for other business.  Flashes as you tap on the screen, with one or more fingers.  You can set the duration of the flash time (from approximately 1/30 to 1/3 of a second).  When the duration slider is at the far left, the LED stays on as long as you touch the screen. So yes, LEDsFlash can also be used as static flashlight.
+
+4. 'Move It' - Gives you a motion controlled strobe light in your hand.  The iPhone 4's gyroscope senses how you move, and intelligently creates a stream of flashes.  Surely this will wow you, as it does us!  If you for example turn around your axis, LEDsFlash flashes as you go, at precisely the speed you turn.  Own the light show when you dance!  You can set the flash speed.
+
+* Note: In real life LEDsFlash is better than can be shown on a video.  Especially the very smooth motion controlled stobe frequency (which reaches video frame-rate), is difficult to show on any video.
+
+* Settings: A single organized settings window allows you to switch the four inputs on/off independently, adjust their settings, and choose the way they interact. You can choose between giving priority to the LED being on, or off. As you'd expect, all settings are saved, and restored when you return to LEDsFlash.
+
+* Availability: Now! http://itunes.apple.com/be/app/ledsflash/id384285294?mt=8
