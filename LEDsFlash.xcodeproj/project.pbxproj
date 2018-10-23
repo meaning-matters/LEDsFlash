@@ -17,6 +17,13 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		480CD7FB217F157600DFF7B8 /* libsamplerate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4846DF85217F0F71007695E2 /* libsamplerate.a */; };
+		4846DEE9217F0B9C007695E2 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 4846DE39217F0B9C007695E2 /* kiss_fft.c */; };
+		4846DEEA217F0B9C007695E2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 4846DE3B217F0B9C007695E2 /* README */; };
+		4846DEEB217F0B9C007695E2 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 4846DE3D217F0B9C007695E2 /* COPYING */; };
+		4846DEEC217F0B9C007695E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846DE3F217F0B9C007695E2 /* README.md */; };
+		4846DF7A217F0B9C007695E2 /* OnsetDetectionFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4846DEDB217F0B9C007695E2 /* OnsetDetectionFunction.cpp */; };
+		4846DF7B217F0B9C007695E2 /* BTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4846DEDC217F0B9C007695E2 /* BTrack.cpp */; };
 		931819E511F88AE300CF1F66 /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 931819E411F88AE300CF1F66 /* Icon114.png */; };
 		93181ABF11F98D3C00CF1F66 /* AUOutputBL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93181ABD11F98D3C00CF1F66 /* AUOutputBL.cpp */; };
 		93181D8011FB379C00CF1F66 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 93181D7F11FB379C00CF1F66 /* Icon57.png */; };
@@ -35,6 +42,30 @@
 		93E20DD511F1B86800E88102 /* Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93E20DD411F1B86800E88102 /* Helper.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		480CD7F9217F155300DFF7B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C046152C2114E44700A160D7;
+			remoteInfo = libsamplerate;
+		};
+		4846DF84217F0F71007695E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C046152D2114E44700A160D7;
+			remoteInfo = libsamplerate;
+		};
+		4846DF86217F0F71007695E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0D6D62D21171A2A000B1ED1;
+			remoteInfo = samplerate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* LEDsFlashAppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = LEDsFlashAppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +82,19 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* LEDsFlash_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDsFlash_Prefix.pch; sourceTree = "<group>"; };
+		4846DE39217F0B9C007695E2 /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		4846DE3A217F0B9C007695E2 /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		4846DE3B217F0B9C007695E2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4846DE3C217F0B9C007695E2 /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		4846DE3D217F0B9C007695E2 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		4846DE3E217F0B9C007695E2 /* kissfft.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = kissfft.hh; sourceTree = "<group>"; };
+		4846DE3F217F0B9C007695E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4846DEDA217F0B9C007695E2 /* CircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularBuffer.h; sourceTree = "<group>"; };
+		4846DEDB217F0B9C007695E2 /* OnsetDetectionFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OnsetDetectionFunction.cpp; sourceTree = "<group>"; };
+		4846DEDC217F0B9C007695E2 /* BTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BTrack.cpp; sourceTree = "<group>"; };
+		4846DEDD217F0B9C007695E2 /* BTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTrack.h; sourceTree = "<group>"; };
+		4846DEDE217F0B9C007695E2 /* OnsetDetectionFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnsetDetectionFunction.h; sourceTree = "<group>"; };
+		4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = samplerate.xcodeproj; path = samplerate/samplerate.xcodeproj; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LEDsFlash-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LEDsFlash-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		931819E411F88AE300CF1F66 /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon114.png; sourceTree = "<group>"; };
 		93181ABD11F98D3C00CF1F66 /* AUOutputBL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AUOutputBL.cpp; sourceTree = "<group>"; };
@@ -84,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480CD7FB217F157600DFF7B8 /* libsamplerate.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -136,6 +181,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4846DE2B217F0B58007695E2 /* External */,
 				93E20D7511F1B18D00E88102 /* Sources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -182,6 +228,67 @@
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4846DE2B217F0B58007695E2 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */,
+				4846DE2C217F0B9C007695E2 /* BTrack */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		4846DE2C217F0B9C007695E2 /* BTrack */ = {
+			isa = PBXGroup;
+			children = (
+				4846DE37217F0B9C007695E2 /* libs */,
+				4846DE3F217F0B9C007695E2 /* README.md */,
+				4846DED9217F0B9C007695E2 /* src */,
+			);
+			path = BTrack;
+			sourceTree = "<group>";
+		};
+		4846DE37217F0B9C007695E2 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4846DE38217F0B9C007695E2 /* kiss_fft130 */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4846DE38217F0B9C007695E2 /* kiss_fft130 */ = {
+			isa = PBXGroup;
+			children = (
+				4846DE39217F0B9C007695E2 /* kiss_fft.c */,
+				4846DE3A217F0B9C007695E2 /* _kiss_fft_guts.h */,
+				4846DE3B217F0B9C007695E2 /* README */,
+				4846DE3C217F0B9C007695E2 /* kiss_fft.h */,
+				4846DE3D217F0B9C007695E2 /* COPYING */,
+				4846DE3E217F0B9C007695E2 /* kissfft.hh */,
+			);
+			path = kiss_fft130;
+			sourceTree = "<group>";
+		};
+		4846DED9217F0B9C007695E2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4846DEDA217F0B9C007695E2 /* CircularBuffer.h */,
+				4846DEDB217F0B9C007695E2 /* OnsetDetectionFunction.cpp */,
+				4846DEDC217F0B9C007695E2 /* BTrack.cpp */,
+				4846DEDD217F0B9C007695E2 /* BTrack.h */,
+				4846DEDE217F0B9C007695E2 /* OnsetDetectionFunction.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4846DF80217F0F71007695E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4846DF85217F0F71007695E2 /* libsamplerate.a */,
+				4846DF87217F0F71007695E2 /* samplerate.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		93CFC65C11F07D2C008FD4BD /* Technical */ = {
@@ -256,6 +363,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				480CD7FA217F155300DFF7B8 /* PBXTargetDependency */,
 			);
 			name = LEDsFlash;
 			productName = LEDsDisco;
@@ -288,6 +396,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4846DF80217F0F71007695E2 /* Products */;
+					ProjectRef = 4846DF7F217F0F71007695E2 /* samplerate.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* LEDsFlash */,
@@ -295,13 +409,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4846DF85217F0F71007695E2 /* libsamplerate.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsamplerate.a;
+			remoteRef = 4846DF84217F0F71007695E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4846DF87217F0F71007695E2 /* samplerate.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = samplerate.framework;
+			remoteRef = 4846DF86217F0F71007695E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4846DEEB217F0B9C007695E2 /* COPYING in Resources */,
 				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
+				4846DEEA217F0B9C007695E2 /* README in Resources */,
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
+				4846DEEC217F0B9C007695E2 /* README.md in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				93D058B711F4CFFC00D16D79 /* Gear.png in Resources */,
 				93D05A5311F5866100D16D79 /* InfoView.xib in Resources */,
@@ -320,11 +454,14 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* LEDsFlashAppDelegate.mm in Sources */,
+				4846DF7B217F0B9C007695E2 /* BTrack.cpp in Sources */,
+				4846DF7A217F0B9C007695E2 /* OnsetDetectionFunction.cpp in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
 				93CFC66011F07D58008FD4BD /* Led.m in Sources */,
 				93E20D8A11F1B27F00E88102 /* CADebugMacros.cpp in Sources */,
 				93E20D8B11F1B27F00E88102 /* CAXException.cpp in Sources */,
+				4846DEE9217F0B9C007695E2 /* kiss_fft.c in Sources */,
 				93E20D8C11F1B27F00E88102 /* CAStreamBasicDescription.cpp in Sources */,
 				93E20DD511F1B86800E88102 /* Helper.cpp in Sources */,
 				93D0599011F4FCB800D16D79 /* InfoViewController.m in Sources */,
@@ -333,6 +470,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		480CD7FA217F155300DFF7B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libsamplerate;
+			targetProxy = 480CD7F9217F155300DFF7B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -349,8 +494,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LEDsFlash_Prefix.pch;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/External/samplerate/libsamplerate/src";
 				INFOPLIST_FILE = "LEDsFlash-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_CFLAGS = (
+					"-DUSE_KISS_FFT",
+					"-I$(SRCROOT)/External/samplerate/libsamplerate/src",
+				);
+				"OTHER_CFLAGS[arch=*]" = "-DUSE_KISS_FFT";
 				PRODUCT_NAME = LEDsFlash;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -372,8 +523,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LEDsFlash_Prefix.pch;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/External/samplerate/libsamplerate/src";
 				INFOPLIST_FILE = "LEDsFlash-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DUSE_KISS_FFT",
+				);
 				PRODUCT_NAME = LEDsFlash;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "422127cc-2a0c-4381-8b2c-5289b6471912";
 				PROVISIONING_PROFILE_SPECIFIER = "";
