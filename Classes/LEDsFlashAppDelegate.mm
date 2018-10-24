@@ -11,12 +11,20 @@
 #import "AudioUnit/AudioUnit.h"
 #import "AudioToolbox/AudioToolbox.h"
 #import "CAXException.h"
+#import "BTrack.h"
 
 AveragesBuffer* averagesBuffer;
 
+// https://stackoverflow.com/a/51282039/1971013
+static int hopSize = 512;
+static int frameSize = 1024;
+
+BTrack btrack(hopSize, frameSize);
+double btrackFrame[1024];
+int btrackIndex = 0;
 
 @implementation AveragesBuffer
-- (void) putAverage:(float)average
+- (void)putAverage:(float)average
 {
     int         capacity = kSampleRate / kFrameNumber;
     static bool isFull = NO;
@@ -38,7 +46,7 @@ AveragesBuffer* averagesBuffer;
 }
 
 
-- (bool) getBeat:(float)beatLevel
+- (bool)getBeat:(float)beatLevel
 {
     static  bool    previousBeat;
     bool            beat;
@@ -310,11 +318,12 @@ static OSStatus	renderAudio(
     // ### We assume 256 frames.
     if (inNumberFrames != 256)
     {
-        NSLog(@"Number of frames %d != 256.", inNumberFrames);
+        NSLog(@"Number of frames %u != 256.", (unsigned int)inNumberFrames);
     }
     
     float   average = 0.0;
     data_ptr = (SInt8 *)(ioData->mBuffers[0].mData);
+    UInt32 *uint32_ptr = (UInt32 *)(ioData->mBuffers[0].mData);
     for (i = 0; i < inNumberFrames; i++)
     {
         float   sample;
@@ -323,11 +332,30 @@ static OSStatus	renderAudio(
         data_ptr += 4;
 
         average += (sample * sample);
+
+        btrackFrame[btrackIndex++] = (double)((SInt16)(uint32_ptr[i] >> 9)) / 32768.0;
     }
     average /= inNumberFrames;
     
     [averagesBuffer putAverage:average];
-	
+
+    if (btrackIndex == frameSize)
+    {
+        btrack.processAudioFrame(btrackFrame);
+        if (btrack.beatDueInCurrentFrame())
+        {
+            [appDelegate.mainViewController switchLedOn:INPUT_SOURCE_BEAT];
+        }
+        else
+        {
+            [appDelegate.mainViewController switchLedOff:INPUT_SOURCE_BEAT];
+        }
+        
+        //  memmove(uint32_ptr, &uint32_ptr[frameSize - hopSize], sizeof(UInt32) * frameSize - hopSize);
+        
+        btrackIndex = frameSize - hopSize;
+    }
+
 	return err;
 }
 
